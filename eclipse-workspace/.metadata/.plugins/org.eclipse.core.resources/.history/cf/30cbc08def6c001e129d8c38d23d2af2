@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1>Llistat de llibres</h1>
+		<table>
+			<tr th:each="libro : ${libros}" >
+				<td><span th:text="${libro.id}"</span></td>
+				<td><span th:text="${libro.title}"</span></td>
+				<td><span th:text="${libro.author}"</span></td>
+			</tr>
+		</table>
+	</body>
+</html>
